@@ -8,7 +8,7 @@ let URL= "https://api.spotify.com/v1/artists/1w5Kfo2jwwIPruYS2UWh56/top-tracks?c
 
 // 2. Definir el token o permiso de acceso
 
-let token = "Bearer BQCADXhoWkptYNyzhZ_aNcueX60OXhvfkIWzJEJUk0DGSAWWoAQEA48eG-6R_-U0u71Fq3RXYd0GZVH64vIPvKxpTeq9XQFETDhGcAWHHSyzAiXIsVUH52xQ0LL8ez60Mz-yJhqPIfVy2ZKD3dms5uSpJuiaPhZfui4";
+let token = "Bearer BQAdL8updBUTTJlI6L0KZCAp7oaUD6x62J0hHJOLJ4hqPF_RQRClLIfSq0zWpDll-yD0uBknIqOQhnL2dEk1aL_2mDAYrvhR8uIvlEULv5T6uejJg_XqlxvLzQkMCj32753SnPMplOe5NpUzDN9BcQ7Nu6Muua6t17M";
 
 // 3. Definir el objeto AJAX
 
@@ -57,36 +57,23 @@ obAJAX.onload = function() {
     titulo0.textContent = respuesta.tracks[0].album.name
     audio0.src= respuesta.tracks[0].preview_url;
 
-}
 
-let obAJAX1= new XMLHttpRequest();
-obAJAX1.open('GET', URL, true);
-obAJAX1.setRequestHeader('Authorization', token);
-obAJAX1.onload = function() {
-        let respuesta1 = JSON.parse(this.responseText);
-
+    let respuesta1 = JSON.parse(this.responseText);
     let imagen1 = document.getElementById("imgjam1");
     let titulo1 = document.getElementById("namejam1");
     let audio1 = document.getElementById("sonidojam1");
-
     imagen1.src=respuesta1.tracks[1].album.images[0].url;
     titulo1.textContent = respuesta1.tracks[1].album.name;
     audio1.src= respuesta1.tracks[1].preview_url;
-}
 
-let obAJAX2 = new XMLHttpRequest();
-obAJAX2.open('GET', URL, true);
-obAJAX2.setRequestHeader('Authorization', token);
-obAJAX2.onload = function() {
     let respuesta2 = JSON.parse(this.responseText);
-
     let imagen2 = document.getElementById("imgjam2");
     let titulo2 = document.getElementById("namejam2");
     let audio2 = document.getElementById("sonidojam2");
-
     imagen2.src=respuesta2.tracks[2].album.images[0].url;
     titulo2.textContent = respuesta2.tracks[2].album.name;
     audio2.src= respuesta2.tracks[2].preview_url;
 }
 //7. Enviamos la petición.
 
+obAJAX.send();
