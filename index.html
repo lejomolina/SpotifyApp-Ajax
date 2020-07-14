@@ -5,11 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SpotyApp</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css">
 </head>
-<body class="bg-dark"></body>
+<body class="bg-dark">
 <header>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">Navbar</a>
+  <nav class="navbar navbar-expand-lg navbar-dark color1">
+      <a class="navbar-brand" href="#">
+        <img src="IMG/musica.png" width="30" height="30" alt="icon" loading="lazy">   Mermelada de perlas
+      </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -17,51 +20,55 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item active">
-          <a class="nav-link" href="#">Acerca de <span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="acerca.html">Acerca de<span class="sr-only">(current)</span></a>
         </li>
     </div>
   </nav>
 </header>
-<main class= "mt-5">
+
+<nav class="mt-4 text-center">
+  <img src="IMG/banner.jpg" class="img-fluid" width="1100" alt="Aquí debería ir una imagen">
+</nav>
+
+<main class= "mt-4">
     <div class="row row-cols-1 row-cols-md-2">
-        <div class="col mb-4">
+        <div class="col mb-3">
           <div class="card">
-            <img src="..." class="card-img-top" alt="...">
+            <img src="..." class="card-img-top" width="100" height="300" alt="Aquí debería ir una imagen" id="imgjam0">
             <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <h5 class="card-title" id="namejam0"></h5>
+              <audio src="..." controls id="sonidojam0"></audio>
+              <p class="card-text"></p>
             </div>
           </div>
         </div>
-        <div class="col mb-4">
+        <div class="col mb-3">
           <div class="card">
-            <img src="..." class="card-img-top" alt="...">
+            <img src="..." class="card-img-top" width="100" height="300" alt="Aquí debería ir una imagen" id="imgjam1">
             <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <h5 class="card-title" id="namejam1"></h5>
+              <audio src="" controls id="sonidojam1"></audio>
+              <p class="card-text"></p>
             </div>
           </div>
         </div>
-        <div class="col mb-4">
-          <div class="card">
-            <img src="..." class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col mb-4">
-          <div class="card">
-            <img src="..." class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        <div class="container">
+          <div class="content-center">
+            <div class="col mb-3">
+              <div class="card">
+                <img src="..." class="card-img-top" width="100" height="300" alt="Aquí debería ir una imagen" id="imgjam2">
+                <div class="card-body">
+                  <h5 class="card-title" id="namejam2"></h5>
+                  <audio src="" controls id="sonidojam2"></audio>
+                  <p class="card-text"></p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
 </main>
+
 <footer>
 
 </footer>
